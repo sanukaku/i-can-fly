@@ -40,37 +40,37 @@
 
         #ui {
             position: absolute;
-            top: 10px;
+            top: 5px;
             left: 10px;
             right: 10px;
             color: white;
-            font-size: 18px;
+            font-size: 14px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             pointer-events: none;
         }
 
         #score {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: bold;
         }
 
         #speedMeter {
-            margin-top: 10px;
+            margin-top: 5px;
             background: rgba(0,0,0,0.3);
-            border-radius: 10px;
-            padding: 5px 10px;
+            border-radius: 8px;
+            padding: 4px 8px;
             display: inline-block;
         }
 
         #speedBar {
-            width: 150px;
-            height: 20px;
+            width: 120px;
+            height: 15px;
             background: rgba(255,255,255,0.3);
             border-radius: 5px;
             overflow: hidden;
             display: inline-block;
             vertical-align: middle;
-            margin-left: 10px;
+            margin-left: 8px;
         }
 
         #speedFill {
@@ -81,18 +81,18 @@
         }
 
         #controls {
-            height: 180px;
+            height: 120px;
             display: flex;
-            gap: 20px;
-            padding: 20px;
+            gap: 15px;
+            padding: 15px;
             background: rgba(0,0,0,0.1);
         }
 
         .btn {
             flex: 1;
-            border-radius: 20px;
+            border-radius: 15px;
             border: none;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             color: white;
             cursor: pointer;
@@ -116,10 +116,10 @@
 
         #message {
             position: absolute;
-            top: 40%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 32px;
+            font-size: 24px;
             font-weight: bold;
             color: white;
             text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
@@ -129,10 +129,10 @@
 
         #title {
             position: absolute;
-            top: 50%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 48px;
+            font-size: 36px;
             font-weight: bold;
             color: white;
             text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
@@ -188,7 +188,7 @@
 
         function init() {
             const buildingWidth = width * 0.3;
-            const buildingHeight = height * 0.4;
+            const buildingHeight = height * 0.3;
 
             building = {
                 x: 0,
@@ -201,13 +201,13 @@
             const maxTargetX = width * 0.9;
             const targetX = minTargetX + Math.random() * (maxTargetX - minTargetX);
             const targetWidth = width * 0.15;
-            const targetY = height - 80;
+            const targetY = height - 50;
 
             target = {
                 x: targetX,
                 y: targetY,
                 width: targetWidth,
-                height: 60,
+                height: 40,
                 centerX: targetX + targetWidth / 2
             };
 
